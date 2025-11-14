@@ -1,2 +1,2 @@
-major = input('What is your major?')
+major = input('What is your major? ')
 print('Oh u r from ' + major)
