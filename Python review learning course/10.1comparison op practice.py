@@ -1,4 +1,4 @@
-name = input("Enter ur mane pls")
+name = input("Enter ur mane pls ")
 print(len(name))
 
 if len(name) < 3:
