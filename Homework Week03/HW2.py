@@ -1,5 +1,4 @@
-'''
-**Homework 2: Lists of Dictionaries in Python**
+'''**Homework 2: Lists of Dictionaries in Python**
 **Objective**: To practice creating, manipulating, and analyzing lists of dictionaries in Python. This assignment will help you understand how to work with complex data structures and apply various Python techniques.
 1. Create a list named students that contains dictionaries. Each dictionary should represent a student with the following keys: name, age, grade, and major.
     Example:
@@ -21,10 +20,10 @@
     ]'''
 
 students = [
-        {"name": "Alice", "age": 20, "grade": 85, "major": "Physics"},
-        {"name": "Bob", "age": 22, "grade": 90, "major": "Chemistry"},
-        {"name": "Charlie", "age": 19, "grade": 78, "major": "Mathematics"},
-        {"name": "Diana", "age": 21, "grade": 92, "major": "Biology"}
+    {"name": "Alice", "age": 20, "grade": 85, "major": "Physics"},
+    {"name": "Bob", "age": 22, "grade": 90, "major": "Chemistry"},
+    {"name": "Charlie", "age": 19, "grade": 78, "major": "Mathematics"},
+    {"name": "Diana", "age": 21, "grade": 92, "major": "Biology"}
 ]
 
 for student in students:
