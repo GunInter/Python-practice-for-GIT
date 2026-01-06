@@ -43,4 +43,12 @@ circum_of_circle = 2 * pi * radius_circle
 
 radius_input = input("Give the radius value: ")
 radius_input_int = int(radius_input)
+
 print(radius_input_int**2 * pi)
+
+name_input = input('pls tell me ur name')
+last_name_input = input('pls tell me ur last name')
+country_input = input('where r u from ?')
+age_input = input('How old r u ?')
+
+name = name_input, last_name_input, country_input, age_input
