@@ -115,5 +115,10 @@ print("check if jargon is in the sentence(I hope this course is not full of jarg
 
 # 15 There is no 'on' in both dragon and python
 
-print('no on in python and dragon', not (
-    'on' in 'dragon' and 'on' in 'python'))
+print('no on in python and dragon', not ('on' in 'dragon' and 'on' in 'python'))
+
+#16 Find the length of the text python and convert the value to float and convert it to string
+
+
+
+#17 Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
