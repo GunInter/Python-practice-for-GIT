@@ -101,8 +101,7 @@ print("x =", x, "y =", y)
 
 # 12 Find the length of 'python' and 'jargon' and make a falsy comparison statement.
 
-print("Word python and jargon is not equal alphabets:",
-      len("python") != len("jargon"))
+print("Word python and jargon is not equal alphabets:", len("python") != len("jargon"))
 
 # 13 Use and operator to check if 'on' is found in both 'python' and 'jargon'
 
@@ -110,8 +109,7 @@ print('on in python and jargon', 'on' in 'python' and 'on' in 'jargon')
 
 # 14 I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
 
-print("check if jargon is in the sentence(I hope this course is not full of jargon)",
-      'jargon' in 'I hope this course is not full of jargon')
+print("check if jargon is in the sentence(I hope this course is not full of jargon)",'jargon' in 'I hope this course is not full of jargon')
 
 # 15 There is no 'on' in both dragon and python
 
@@ -119,6 +117,34 @@ print('no on in python and dragon', not ('on' in 'dragon' and 'on' in 'python'))
 
 #16 Find the length of the text python and convert the value to float and convert it to string
 
+length_python = len("python")
+float_python = float(length_python)
+string_python = str(float_python)
 
+#17 Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python? 
 
-#17 Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
+num_even = int(input("pls enter number: "))
+check_even = 18 % 2
+print("number is even: " ,check_even == 0)
+
+#18 The floor division of 7 by 3 is equal to the int converted value of 2.7
+
+floor_division = 7 // 3
+floor_divide =  7 / 3
+decimal_two = 2.7
+int_convert_num = int(decimal_two)
+print("floor division is equal to int covert 2.7", floor_division == int_convert_num)
+
+#19 Check if type of '10' is equal to 10
+
+ten = "10"
+num_10 = 10
+print("type of '10' is equal to 10", type(ten) == type(num_10))
+
+#20 Check if int('9.8') is equal to 10
+
+ten1 = 10
+nine = '9.8'
+float_num9 = float(nine)
+int_num9 = int(float_num9)
+print("if int('9.8') is equal to 10", ten1 == int_num9)
