@@ -148,3 +148,24 @@ nine = '9.8'
 float_num9 = float(nine)
 int_num9 = int(float_num9)
 print("if int('9.8') is equal to 10", ten1 == int_num9)
+
+#21 Writ a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
+
+hours_work = int(input("Enter hours: "))
+rate_hour = int(input("Enter rate per hour :"))
+
+print("Your weekly earning is ",hours_work * rate_hour)
+
+#22 Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. 
+# Assume someone lives up to hundred years
+
+year_live = int(input("Enter number of years you have lived:"))
+print("You have lived for ",year_live * 12 * 30 * 24 * 60 * 60 ,"seconds")
+
+#23 Write a python script that displays the following table
+
+print(1, 1, 1, 1, 1)
+print(2, 1, 2, 4, 8)
+print(3, 1, 3, 9, 27)
+print(4, 1, 4, 16, 64)
+print(5, 1, 5, 25, 125)
