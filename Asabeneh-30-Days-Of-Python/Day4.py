@@ -2,14 +2,21 @@
 
 first = "Thirty"
 second = "Days"
-third = "of"
+third = "Of"
 fourth = "Python"
 space = " "
 merge = first + space + second + space + third + space + fourth
 
 print(merge)
+
 # 2 Concatenate the string 'Coding', 'For', 'All' to a single string, 'Coding For All'.
 
+a = 'Coding'
+b = 'For'
+c = 'All'
+
+merge1 = a + space + b + space + c
+print(merge1)
 # 3 Declare a variable named company and assign it to an initial value "Coding For All".
 
 # 4 Print the variable company using print().
