@@ -40,8 +40,14 @@ print(company.lower())
 
 # 8 Use capitalize(), title(), swapcase() methods to format the value of the string Coding For All.
 
+print(company.capitalize())
+print(company.title())
+print(company.swapcase())
 
 # 9 Cut (slice) out the first word of Coding For All string.
+
+remove_first_word = company[6:]
+print(remove_first_word)
 
 # 10 Check if Coding For All string contains a word Coding using the method index, find or other methods.
 
