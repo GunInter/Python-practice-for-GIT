@@ -51,21 +51,46 @@ print(remove_first_word)
 
 # 10 Check if Coding For All string contains a word Coding using the method index, find or other methods.
 
+print(company.startswith('Coding'))
+
+
 # 11 Replace the word coding in the string 'Coding For All' to Python.
+
+print(company.replace('Coding','Python'))
 
 # 12 Change Python for Everyone to Python for All using the replace method or other methods.
 
+p_for_all = 'Python for Everyone'
+print(p_for_all.replace('Everyone','All'))
+
 # 13 Split the string 'Coding For All' using space as the separator (split()).
+
+print(company.split(' '))
 
 # 14 "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
 
+stocks = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+print(stocks.split(','))
+
 # 15 What is the character at index 0 in the string Coding For All.
+
+first_letter = company[0]
+print(first_letter)
 
 # 16 What is the last index of the string Coding For All.
 
+last_letter = company[13]
+print(last_letter)
+
 # 17 What character is at index 10 in "Coding For All" string.
 
+tenth_letter = company[10]
+print(tenth_letter)
+
+
 # 18 Create an acronym or an abbreviation for the name 'Python For Everyone'.
+
+
 
 # 19 Create an acronym or an abbreviation for the name 'Coding For All'.
 
