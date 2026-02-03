@@ -56,12 +56,12 @@ print(company.startswith('Coding'))
 
 # 11 Replace the word coding in the string 'Coding For All' to Python.
 
-print(company.replace('Coding','Python'))
+print(company.replace('Coding', 'Python'))
 
 # 12 Change Python for Everyone to Python for All using the replace method or other methods.
 
 p_for_all = 'Python for Everyone'
-print(p_for_all.replace('Everyone','All'))
+print(p_for_all.replace('Everyone', 'All'))
 
 # 13 Split the string 'Coding For All' using space as the separator (split()).
 
@@ -90,32 +90,62 @@ print(tenth_letter)
 
 # 18 Create an acronym or an abbreviation for the name 'Python For Everyone'.
 
+p_for_all1 = 'Python For Everyone'
+first_alpha = p_for_all1[0]
+Second_alpha = p_for_all1[7]
+third_alpha = p_for_all1[11]
 
+print(first_alpha + Second_alpha + third_alpha)
 
 # 19 Create an acronym or an abbreviation for the name 'Coding For All'.
 
+print(company[0] + company[7] + company[11])
+
 # 20 Use index to determine the position of the first occurrence of C in Coding For All.
+
+print(company.index('C'))
 
 # 21 Use index to determine the position of the first occurrence of F in Coding For All.
 
+print(company.index('F'))
+
 # 22 Use rfind to determine the position of the last occurrence of l in Coding For All People.
+
+print(company.rfind('l'))
 
 # 23 Use index or find to find the position of the first occurrence of the word 'because' in the following sentence:
 #   'You cannot end a sentence with because because because is a conjunction'
 
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+print(sentence.find('because'))
+
+
 # 24 Use rindex to find the position of the last occurrence of the word because in the following sentence:
 #   'You cannot end a sentence with because because because is a conjunction'
+
+print(sentence.rfind('because'))
 
 # 25 Slice out the phrase 'because because because' in the following sentence:
 #   'You cannot end a sentence with because because because is a conjunction'
 
+remove_because_word = sentence[31:55]
+print(remove_because_word)
+
 # 26 Find the position of the first occurrence of the word 'because' in the following sentence:
 #   'You cannot end a sentence with because because because is a conjunction'
+
+print(sentence.find('because'))
+
 
 # 27 Slice out the phrase 'because because because' in the following sentence:
 #   'You cannot end a sentence with because because because is a conjunction'
 
+remove_because_word = sentence[31:55]
+print(remove_because_word)
+
+
 # 28 Does 'Coding For All' start with a substring Coding?
+
 
 # 29 Does 'Coding For All' end with a substring coding?
 
