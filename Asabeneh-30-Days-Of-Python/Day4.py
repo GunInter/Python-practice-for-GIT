@@ -146,10 +146,17 @@ print(remove_because_word)
 
 # 28 Does 'Coding For All' start with a substring Coding?
 
+sub_string = 'Coding'
+print(company.index(sub_string))
+print(company.index(sub_string, 0))
+print(company.startswith(sub_string))
 
 # 29 Does 'Coding For All' end with a substring coding?
 
+print(company.endswith(sub_string))
+
 # 30 '   Coding For All      ' remove the left and right trailing spaces in the given string.
+
 
 # 31 Which one of the following variables return True when we use the method isidentifier():
 #   30DaysOfPython
