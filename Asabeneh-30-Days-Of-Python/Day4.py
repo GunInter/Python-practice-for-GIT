@@ -153,14 +153,16 @@ print(company.startswith(sub_string))
 
 # 29 Does 'Coding For All' end with a substring coding?
 
-print(company.endswith(sub_string))
+print(company.endswith('Coding'))
 
 # 30 '   Coding For All      ' remove the left and right trailing spaces in the given string.
 
-
+word_space = '   Coding For All      '
+print(word_space.strip(' '))
 # 31 Which one of the following variables return True when we use the method isidentifier():
 #   30DaysOfPython
 #   thirty_days_of_python
+
 
 # 32 The following list contains the names of some Python libraries:
 #   ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
