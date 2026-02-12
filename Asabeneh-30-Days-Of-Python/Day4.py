@@ -159,11 +159,22 @@ print(company.endswith('Coding'))
 
 word_space = '   Coding For All      '
 print(word_space.strip(' '))
+
 # 31 Which one of the following variables return True when we use the method isidentifier():
 #   30DaysOfPython
 #   thirty_days_of_python
 
+challenge = '30DaysOfPython'
+alpha_challenge = 'hirty_days_of_python'
+
+print(challenge.isidentifier())
+print(alpha_challenge.isidentifier())
 
 # 32 The following list contains the names of some Python libraries:
 #   ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
 #   Join the list with a hash and space string.
+
+libraaries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+join_hash = '# '.join(libraaries)
+
+print(join_hash)
