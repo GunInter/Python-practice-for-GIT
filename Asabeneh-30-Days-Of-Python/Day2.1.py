@@ -65,5 +65,9 @@ radius = 30
 area_of_circle = 3.14 * radius**2
 print(area_of_circle)
 # Calculate the circumference of a circle and assign the value to a variable circum_of_circle
-
+circum_of_circle = 2 * 3.14 * radius
 # Take radius as user input and calculate the area.
+radius_input = input('Put the radius:')
+print(radius_input**2 * 3.14)
+
+#19.Use the built-in input function to get first name, last name, country and age from a user and store the value to their corresponding variable 
