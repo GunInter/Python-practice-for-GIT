@@ -68,6 +68,13 @@ print(area_of_circle)
 circum_of_circle = 2 * 3.14 * radius
 # Take radius as user input and calculate the area.
 radius_input = input('Put the radius:')
-print(radius_input**2 * 3.14)
+radius_input_int = int(radius_input)
+print(radius_input_int**2 * 3.14)
 
-#19.Use the built-in input function to get first name, last name, country and age from a user and store the value to their corresponding variable 
+# 19.Use the built-in input function to get first name, last name, country and age from a user and store the value to their corresponding variable
+
+name_input = input('whats ur name?')
+lastname_input = input('whats ur lastname?')
+country_input = input('where r u from?')
+age_input = input('How old r u?')
+list = (name_input , lastname_input , country_input , age_input)
