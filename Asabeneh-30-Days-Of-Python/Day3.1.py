@@ -20,8 +20,9 @@ perimeter = side_a + side_b + side_c
 print('The perimeter of the triangle is ', perimeter)
 # 6.Get length and width of a rectangle using prompt. Calculate its area (area = length x width) and perimeter (perimeter = 2 x (length + width))
 lenght_rec = int(input('Enter lenght: '))
-width_rec = int(input('Enter lenght: '))
+width_rec = int(input('Enter width: '))
 area_rec = lenght_rec * width_rec
+print(area_rec)
 # 7.Get radius of a circle using prompt. Calculate the area (area = pi x r x r) and circumference (c = 2 x pi x r) where pi = 3.14.
 radius_circle = int(input('Enter radius: '))
 area_cir = 3.14 * radius_circle * radius_circle
@@ -68,19 +69,42 @@ print('on' in 'python' and 'on' in 'jargon')
 # 14.I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
 print('jargon' in 'I hope this course is not full of jargon')
 # 15.There is no 'on' in both dragon and python
-print('on' not in 'dragon' and 'python')
+print('on' not in 'dragon' and 'on' not in 'python')
 # 16.Find the length of the text python and convert the value to float and convert it to string
+len_word = len('python')
+float_convert = float(len_word)
+string_convert = str(float_convert)
+print(string_convert)
 # 17.Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
-# 18.The floor division of 7 by 3 is equal to the int converted value of 2.7.
+num = int(input('Pls enter num: '))
+print(num % 2 == 0)
+# 18.The floor division of 7 by 3 is equal to the int converted value of 2.7
+floor_division = 7 // 3
+decimal = 2.7
+covert_int = int(decimal)
+
+print(floor_division == covert_int)
 # 19.Check if type of '10' is equal to 10
+print(type('10') == (type(10)))
 # 20.Check if int('9.8') is equal to 10
+numstr = '9.8'
+numstr_float = float(numstr)
+
+print(int(numstr_float) == 10)
 # 21.Write a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
 '''Enter hours: 40
 Enter rate per hour: 28
 Your weekly earning is 1120'''
+hours = int(input('Enter hours: '))
+rate_per_hours = int(input('Enter rate per hour: '))
+weekly_earning = hours * rate_per_hours
+print('Your weekly earning is: ', weekly_earning)
 # 22.Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume someone lives up to hundred years
 '''Enter number of years you have lived: 100
 You have lived for 3153600000 seconds.'''
+year = int(input('Enter number of years you have lived: '))
+year_calculate = year * 365 * 24 * 60 * 60
+print('You have lived for:', year_calculate, 'seconds')
 # 23.Write a python script that displays the following table
 '''
 1 1 1 1 1
@@ -89,3 +113,8 @@ You have lived for 3153600000 seconds.'''
 4 1 4 16 64
 5 1 5 25 125
 '''
+print(1, 1, 1, 1, 1)
+print(2, 1, 2, 4, 8)
+print(3, 1, 3, 9, 27)
+print(4, 1, 4, 16, 64)
+print(5, 1, 5, 25, 125)
