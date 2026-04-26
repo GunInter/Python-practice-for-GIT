@@ -22,13 +22,16 @@ print(len(company))
 # 6. Change all characters to uppercase using upper().
 print(company.upper())
 # 7. Change all characters to lowercase using lower().
-
+print(company.lower())
 # 8. Use capitalize(), title(), swapcase() on "Coding For All".
-
+print(company.capitalize())
+print(company.title())
+print(company.swapcase())
 # 9. Slice out the first word of "Coding For All".
-
+slice_company = company[6:14]
+print(slice_company)
 # 10. Check if "Coding For All" contains the word "Coding".
-
+print('Coding' in company)
 # 11. Replace "Coding" with "Python" in "Coding For All".
 
 # 12. Change "Python for Everyone" to "Python for All".
