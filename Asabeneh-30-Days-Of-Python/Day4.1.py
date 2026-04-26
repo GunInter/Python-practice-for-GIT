@@ -1,15 +1,26 @@
 # 1. Concatenate the string 'Thirty', 'Days', 'Of', 'Python' to a single string.
+word1 = 'Thirty'
+word2 = 'Day'
+word3 = 'Of'
+word4 = 'Python'
+combine = word1 + word2 + word3 + word4
+print(combine)
 
 # 2. Concatenate the string 'Coding', 'For', 'All' to a single string.
+coding = 'Coding'
+for_ = 'For'
+All = 'All'
+combine1 = coding + for_ + All
+print(combine1)
 
 # 3. Declare a variable named company and assign it "Coding For All".
-
+company = 'Coding for All'
 # 4. Print the variable company using print().
-
+print(company)
 # 5. Print the length of the company string using len().
-
+print(len(company))
 # 6. Change all characters to uppercase using upper().
-
+print(company.upper())
 # 7. Change all characters to lowercase using lower().
 
 # 8. Use capitalize(), title(), swapcase() on "Coding For All".
