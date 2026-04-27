@@ -1,6 +1,0 @@
-sentence = "You cannot end a sentence with because because because is a conjunction"
-
-start = sentence.find('because')
-end = start + len('because because because')
-
-print(sentence[start:end])

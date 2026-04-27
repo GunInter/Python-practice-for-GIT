@@ -120,12 +120,17 @@ print('I am enjoying this challenge. \nI just wonder what is next.')
 # 34. Use tab escape sequence to format:
 # Name      Age     Country
 # Asabeneh  250     Finland
-
+print('Name    \tAge\tCountry ')
+print('Asabeneh\t250\tFinland ')
 # 35. Format string:
 # radius = 10
 # area = 3.14 * radius ** 2
 # Output: The area of a circle with radius 10 is 314 meters square.
-
+radius = 10
+area = 3.14 * radius ** 2
+formated_string = 'The area of a circle with radius %d is %d meters square.' % (
+    radius, area)
+print(formated_string)
 # 36. Format the following operations:
 # 8 + 6 = 14
 # 8 - 6 = 2
@@ -134,3 +139,14 @@ print('I am enjoying this challenge. \nI just wonder what is next.')
 # 8 % 6 = 2
 # 8 // 6 = 1
 # 8 ** 6 = 262144
+
+a = 8
+b = 6
+
+print(f'{a} + {b} = {a + b}')
+print(f'{a} - {b} = {a - b}')
+print(f'{a} * {b} = {a * b}')
+print(f'{a} / {b} = {a / b:.2f}')
+print(f'{a} % {b} = {a % b}')
+print(f'{a} // {b} = {a // b}')
+print(f'{a} ** {b} = {a ** b}')
