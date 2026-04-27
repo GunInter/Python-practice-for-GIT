@@ -33,11 +33,11 @@ print(slice_company)
 # 10. Check if "Coding For All" contains the word "Coding".
 print('Coding' in company)
 # 11. Replace "Coding" with "Python" in "Coding For All".
-print(company.replace('Coding','Python'))
+print(company.replace('Coding', 'Python'))
 
 # 12. Change "Python for Everyone" to "Python for All".
 word5 = 'Python for everyone'
-print(word5.replace('Everyone','All'))
+print(word5.replace('Everyone', 'All'))
 # 13. Split the string "Coding For All" using space.
 print(company.split(' '))
 # 14. Split "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" by comma.
@@ -105,9 +105,9 @@ print(sentence.strip(' '))
 # - 30DaysOfPython
 # - thirty_days_of_python
 challenge = '30DaysOfPython'
-print(challenge.isidentifier()) # False, because it starts with a number
+print(challenge.isidentifier())  # False, because it starts with a number
 challenge = 'thirty_days_of_python'
-print(challenge.isidentifier()) # True
+print(challenge.isidentifier())  # True
 
 # 32. Join ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon'] with " # ".
 vocab = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
