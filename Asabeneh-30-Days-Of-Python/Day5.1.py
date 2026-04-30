@@ -6,7 +6,7 @@ stocks =['Amazon','Nvdia','Blackrock','Netflix','Microsoft' ]
 print(len(stocks))
 # 4. Get the first item, the middle item and the last item of the list
 First = (stocks[0])
-Middle = stocks[len(stocks)//2]
+Middle = [len(stocks)//2]
 Last = (stocks[-1])
 print(First)
 print(Middle)
@@ -30,11 +30,14 @@ print(Middle_company)
 print(Last_company)
 
 # 10. Print the list after modifying one of the companies
-
+it_companies[0] = 'Tesla'
+print(it_companies)
 # 11. Add an IT company to it_companies
-
+it_companies.append('SOFI')
 # 12. Insert an IT company in the middle of the companies list
-
+middle_index = len(it_companies)//2
+it_companies.insert(middle_index, 'Iren')
+print(it_companies)
 # 13. Change one of the it_companies names to uppercase (IBM excluded!)
 
 # 14. Join the it_companies with a string '#;  '
