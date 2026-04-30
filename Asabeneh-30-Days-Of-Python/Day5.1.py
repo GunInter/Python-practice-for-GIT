@@ -6,16 +6,16 @@ stocks =['Amazon','Nvdia','Blackrock','Netflix','Microsoft' ]
 print(len(stocks))
 # 4. Get the first item, the middle item and the last item of the list
 First = (stocks[0])
-Middle = [len(stocks)//2]
+Middle = stocks[len(stocks)//2]
 Last = (stocks[-1])
 print(First)
 print(Middle)
 print(Last)
 # 5. Declare a list called mixed_data_types, put your(name, age, height, marital status, address)
-mixed_data_types = ['Nonpravit','21','174','GF','105/47 Pinkloa city village']
+mixed_data_types = ['Nonpravit',21,174,'GF','105/47 Pinkloa city village']
 
 # 6. Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon.
-it_companies = ['Facebook','Google','Apple','IBM','Oracle','Amazon']
+it_companies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
 # 7. Print the list using print()
 print(it_companies)
 # 8. Print the number of companies in the list
@@ -23,7 +23,7 @@ number_company = (len(it_companies))
 print(number_company)
 # 9. Print the first, middle and last company
 First_company = (it_companies[0])
-Middle_company = it_companies[len(stocks)//2]
+Middle_company = it_companies[len(it_companies)//2]
 Last_company = (it_companies[-1])
 print(First_company)
 print(Middle_company)
@@ -39,31 +39,44 @@ middle_index = len(it_companies)//2
 it_companies.insert(middle_index, 'Iren')
 print(it_companies)
 # 13. Change one of the it_companies names to uppercase (IBM excluded!)
-
+it_companies[1] = it_companies[1].upper()
+print(it_companies)
 # 14. Join the it_companies with a string '#;  '
-
+it_companies = '#;  '.join(it_companies)
+print(it_companies)
 # 15. Check if a certain company exists in the it_companies list.
-
+print('Tesla'in it_companies)
 # 16. Sort the list using sort() method
-
+fruits =['Banana','Orange','Apple','Grape']
+fruits.sort()
+print(fruits)
 # 17. Reverse the list in descending order using reverse() method
-
+fruits.reverse()
+print(fruits)
 # 18. Slice out the first 3 companies from the list
-
+it_companies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
+first_3 = it_companies[0:3]
+print(first_3)
 # 19. Slice out the last 3 companies from the list
-
+Last_3 = it_companies[-3:]
+print(Last_3)
 # 20. Slice out the middle IT company or companies from the list
-
+Middle_company20 = it_companies[len(it_companies)//2]
+print(Middle_company20)
 # 21. Remove the first IT company from the list
-
+it_companies.remove(it_companies[0])
+print(it_companies)
 # 22. Remove the middle IT company or companies from the list
-
+it_companies.remove(it_companies[len(it_companies)//2])
+print(it_companies)
 # 23. Remove the last IT company from the list
-
+it_companies.remove(it_companies[-1])
+print(it_companies)
 # 24. Remove all IT companies from the list
-
+it_companies.clear()
+print(it_companies)
 # 25. Destroy the IT companies list
-
+del it_companies
 # 26. Join the following lists:
 # front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 # back_end = ['Node','Express', 'MongoDB']
