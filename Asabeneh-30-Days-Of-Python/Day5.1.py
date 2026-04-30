@@ -80,7 +80,8 @@ del it_companies
 # 26. Join the following lists:
 # front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 # back_end = ['Node','Express', 'MongoDB']
-
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
 # 27. After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack. Then insert Python and SQL after Redux.
 
 # 28. The following is a list of 10 students ages:
