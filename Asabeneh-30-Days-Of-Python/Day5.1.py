@@ -82,25 +82,68 @@ del it_companies
 # back_end = ['Node','Express', 'MongoDB']
 front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 back_end = ['Node','Express', 'MongoDB']
+front_back_end = front_end + back_end
+print(front_back_end)
 # 27. After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack. Then insert Python and SQL after Redux.
-
+full_stack = front_back_end.copy()
+full_stack.insert(5,'Python')
+full_stack.insert(6,'SQL')
+print(full_stack)
 # 28. The following is a list of 10 students ages:
 # ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 # Sort the list and find the min and max age
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort()
+print(ages)
 
+max_values = max(ages)
+min_values = min(ages)
+print('Max values is: ',max_values)
+print('Min value is: ',min_values)
 # 29. Add the min age and the max age again to the list
-
+ages.insert
 # 30. Find the median age (one middle item or two middle items divided by two)
-
+ages.append(min_values)
+ages.append(max_values)
+print(ages)
 # 31. Find the average age (sum of all items divided by their number )
-
+ages.sort()
+their_num = len(ages)
+sum_of_all = sum(ages)
+average = sum_of_all / their_num
+print(their_num)
+print(sum_of_all)
+print(average)
 # 32. Find the range of the ages (max minus min)
-
+range_ages = max_values - min_values
+print('Range of this set is: ',range_ages)
 # 33. Compare the value of (min - average) and (max - average), use abs() method
+min_average = min_values - average
+max_average = max_values - average
+print(abs(min_average))
+print(abs(max_average))
 
 # 34. Find the middle country(ies) in the countries list
+countries = [
+    'China', 'Russia', 'USA', 'Finland', 'Sweden',
+    'Norway', 'Denmark', 'Iceland', 'Germany', 'France'
+]
+Middle_countries =countries[len(countries)//2]
+print(Middle_countries)
 
+mid = len(countries)//2
+Middle_countries = countries[mid-1:mid+1]
+print(Middle_countries)
 # 35. Divide the countries list into two equal lists if it is even if not one more country for the first half.
-
+first = countries[:mid]
+second = countries[mid:]
+print(first)
+print(second)
 # 36. ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark'].
 # Unpack the first three countries and the rest as scandic countries.
+lst = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+first_country, second_country , third_country, *rest = lst
+print(first_country)
+print(second_country)
+print(third_country)
+print(rest)
