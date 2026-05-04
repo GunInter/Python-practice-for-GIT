@@ -1,7 +1,7 @@
 # 1. Declare an empty list
 empty_list = []
 # 2. Declare a list with more than 5 items
-stocks =['Amazon','Nvdia','Blackrock','Netflix','Microsoft' ]
+stocks = ['Amazon', 'Nvdia', 'Blackrock', 'Netflix', 'Microsoft']
 # 3. Find the length of your list
 print(len(stocks))
 # 4. Get the first item, the middle item and the last item of the list
@@ -12,15 +12,15 @@ print(First)
 print(Middle)
 print(Last)
 # 5. Declare a list called mixed_data_types, put your(name, age, height, marital status, address)
-mixed_data_types = ['Nonpravit',21,174,'GF','105/47 Pinkloa city village']
+mixed_data_types = ['Nonpravit', 21, 174, 'GF', '105/47 Pinkloa city village']
 
 # 6. Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon.
-it_companies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
+it_companies = ['Facebook', 'Google', 'Microsoft',
+                'Apple', 'IBM', 'Oracle', 'Amazon']
 # 7. Print the list using print()
 print(it_companies)
 # 8. Print the number of companies in the list
-number_company = (len(it_companies))
-print(number_company)
+
 # 9. Print the first, middle and last company
 First_company = (it_companies[0])
 Middle_company = it_companies[len(it_companies)//2]
@@ -45,16 +45,17 @@ print(it_companies)
 it_companies = '#;  '.join(it_companies)
 print(it_companies)
 # 15. Check if a certain company exists in the it_companies list.
-print('Tesla'in it_companies)
+print('Tesla' in it_companies)
 # 16. Sort the list using sort() method
-fruits =['Banana','Orange','Apple','Grape']
+fruits = ['Banana', 'Orange', 'Apple', 'Grape']
 fruits.sort()
 print(fruits)
 # 17. Reverse the list in descending order using reverse() method
 fruits.reverse()
 print(fruits)
 # 18. Slice out the first 3 companies from the list
-it_companies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon']
+it_companies = ['Facebook', 'Google', 'Microsoft',
+                'Apple', 'IBM', 'Oracle', 'Amazon']
 first_3 = it_companies[0:3]
 print(first_3)
 # 19. Slice out the last 3 companies from the list
@@ -81,13 +82,13 @@ del it_companies
 # front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 # back_end = ['Node','Express', 'MongoDB']
 front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
-back_end = ['Node','Express', 'MongoDB']
+back_end = ['Node', 'Express', 'MongoDB']
 front_back_end = front_end + back_end
 print(front_back_end)
 # 27. After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack. Then insert Python and SQL after Redux.
 full_stack = front_back_end.copy()
-full_stack.insert(5,'Python')
-full_stack.insert(6,'SQL')
+full_stack.insert(5, 'Python')
+full_stack.insert(6, 'SQL')
 print(full_stack)
 # 28. The following is a list of 10 students ages:
 # ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
@@ -98,8 +99,8 @@ print(ages)
 
 max_values = max(ages)
 min_values = min(ages)
-print('Max values is: ',max_values)
-print('Min value is: ',min_values)
+print('Max values is: ', max_values)
+print('Min value is: ', min_values)
 # 29. Add the min age and the max age again to the list
 ages.insert
 # 30. Find the median age (one middle item or two middle items divided by two)
@@ -116,7 +117,7 @@ print(sum_of_all)
 print(average)
 # 32. Find the range of the ages (max minus min)
 range_ages = max_values - min_values
-print('Range of this set is: ',range_ages)
+print('Range of this set is: ', range_ages)
 # 33. Compare the value of (min - average) and (max - average), use abs() method
 min_average = min_values - average
 max_average = max_values - average
@@ -128,7 +129,7 @@ countries = [
     'China', 'Russia', 'USA', 'Finland', 'Sweden',
     'Norway', 'Denmark', 'Iceland', 'Germany', 'France'
 ]
-Middle_countries =countries[len(countries)//2]
+Middle_countries = countries[len(countries)//2]
 print(Middle_countries)
 
 mid = len(countries)//2
@@ -142,7 +143,7 @@ print(second)
 # 36. ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark'].
 # Unpack the first three countries and the rest as scandic countries.
 lst = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
-first_country, second_country , third_country, *rest = lst
+first_country, second_country, third_country, *rest = lst
 print(first_country)
 print(second_country)
 print(third_country)
