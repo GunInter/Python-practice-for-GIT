@@ -33,10 +33,11 @@ print(type(student['skills']))
 student['skills'].append('C++')
 print(student)
 # 7. Get the dictionary keys as a list
-keys_as_list = student.keys
+keys_as_list = list(student.keys())
 print(keys_as_list)
 # 8. Get the dictionary values as a list
-values_as_list = student.keys
+values_as_list = list(student.values())
+print(values_as_list)
 # 9. Change the dictionary to a list of tuples using items() method
 print(student.items())
 # 10. Delete one of the items in the dictionary
