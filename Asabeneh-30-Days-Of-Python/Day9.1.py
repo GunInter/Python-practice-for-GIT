@@ -22,6 +22,9 @@ else:
 # - use "year" or "years" correctly
 # - if equal → custom message
 
+my_age = int(input('Enter your age: '))
+
+
 # 3. Compare two numbers
 # Get a and b from input
 # If a > b → print "a is greater than b"
