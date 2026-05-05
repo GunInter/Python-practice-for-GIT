@@ -22,7 +22,18 @@ else:
 # - use "year" or "years" correctly
 # - if equal → custom message
 
-my_age = int(input('Enter your age: '))
+your_age = int(input('Enter your age: '))
+my_age = 18
+if your_age > my_age:
+    num1 = your_age - my_age
+    print('You are ', num1, 'years older than me.')
+
+elif your_age < my_age:
+    num2 = my_age - your_age
+    print('You are ', num2, 'years younger than me.')
+
+elif your_age == my_age:
+    print('Our age r equal')
 
 
 # 3. Compare two numbers
@@ -30,7 +41,15 @@ my_age = int(input('Enter your age: '))
 # If a > b → print "a is greater than b"
 # If a < b → print "a is smaller than b"
 # Else → print "a is equal to b"
+A = int(input('Enter number one: '))
+B = int(input('Enter number two: '))
 
+if A > B:
+    print(A, 'is greater than', B)
+elif B > A:
+    print(B, 'is greater than', A)
+else:
+    print(A, 'is equal to', B)
 # 4. Grade system
 # Get score from input
 # 80–100 → A
@@ -38,7 +57,17 @@ my_age = int(input('Enter your age: '))
 # 60–69 → C
 # 50–59 → D
 # 0–49 → F
-
+score = int(input('Enter your score: '))
+if score <= 49:
+    print('You get F')
+elif 50 <= score <= 59:
+    print('You get D')
+elif 60 <= score <= 69:
+    print('You get C')
+elif 70 <= score <= 79:
+    print('You get B')
+elif 80 <= score <= 100:
+    print('You get A')
 # 5. Season checker
 # Get month from input
 # Autumn → September, October, November
@@ -46,12 +75,32 @@ my_age = int(input('Enter your age: '))
 # Spring → March, April, May
 # Summer → June, July, August
 
-# 6. Fruit checker
+Autumn = ['September', 'October', 'November']
+Winter = ['December', 'January', 'February']
+Spring = ['March', 'April', 'May']
+Summer = ['June', 'July', 'August']
+
+month = input('Enter month:').capitalize()
+if month in Autumn:
+    print('U r in Autumn season')
+elif month in Winter:
+    print('U r in Winter season')
+elif month in Spring:
+    print('U r in Spring season')
+elif month in Summer:
+    print('U r in Summer season')
+
+# 6
 fruits = ['banana', 'orange', 'mango', 'lemon']
 # Get fruit from input
 # If not in list → add it and print list
 # Else → print "That fruit already exist in the list"
-
+fruits_input = input('Pls enter fruit name:')
+if fruits_input in fruits:
+    print('That fruit already exist in the list')
+elif fruits_input not in fruits:
+    add = fruits.append(fruits_input)
+    print(add)
 # 7. Person dictionary tasks
 person = {
     'first_name': 'Asabeneh',
