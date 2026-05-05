@@ -101,6 +101,8 @@ if fruits_input in fruits:
 elif fruits_input not in fruits:
     add = fruits.append(fruits_input)
     print(add)
+
+
 # 7. Person dictionary tasks
 person = {
     'first_name': 'Asabeneh',
@@ -114,12 +116,16 @@ person = {
         'zipcode': '02210'
     }
 }
-
 # 7.1 Check if 'skills' key exists
 # If yes → print middle skill
+skills = person['skills']
+mid = len(skills) // 2
+if 'skills' in person:
+    print(skills[mid])
 
 # 7.2 Check if 'Python' is in skills
-
+if 'Python' in skills:
+    print('Python skill found')
 # 7.3 Determine role:
 # - JavaScript + React → front end
 # - Node + Python + MongoDB → backend
@@ -128,3 +134,8 @@ person = {
 
 # 7.4 If married and lives in Finland:
 # print "Asabeneh Yetayeh lives in Finland. He is married."
+married = person['is_marred']
+live_country = person['country']
+
+if married is True and live_country is 'Finland':
+    print("Asabeneh Yetayeh lives in Finland. He is married.")
