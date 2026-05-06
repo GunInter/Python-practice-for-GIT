@@ -120,8 +120,14 @@ countries = [
 ]
 
 for find_land in countries:
-    if 'land' in countries:
-        print('there is land is country list')
+    if 'land' in find_land:
+        print(find_land)
 
 # 14. Reverse fruit list using loop
 fruits = ['banana', 'orange', 'mango', 'lemon']
+reversed_list = []
+
+for fruit in fruits:
+    reversed_list.insert(0, fruit)
+
+print(reversed_list)
