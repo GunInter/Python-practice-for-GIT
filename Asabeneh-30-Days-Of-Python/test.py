@@ -1,23 +1,10 @@
-# 5. Write check_season(month)
-# Return: Autumn, Winter, Spring or Summer
-def check_season(month):
+def print_list():
 
-    Autumn = ['September', 'October', 'November']
-    Winter = ['December', 'January', 'February']
-    Spring = ['March', 'April', 'May']
-    Summer = ['June', 'July', 'August']
+    names = ['Gun', 'Alice', 'Bob', 'Charlie', 'David']
 
-    if month in Autumn:
-        return 'Autumn'
-
-    elif month in Winter:
-        return 'Winter'
-
-    elif month in Spring:
-        return 'Spring'
-
-    elif month in Summer:
-        return 'Summer'
+    for name in names:
+        print(name)
 
 
-print(check_season('September'))
+print_list
+print(print_list())

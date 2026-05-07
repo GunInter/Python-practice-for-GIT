@@ -104,12 +104,33 @@ print(solve_quadratic_eqn(1, -5, 6))
 # 8.Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list.
 
 
-# 9. Declare a function named reverse_list. It takes an array as a parameter and it returns the reverse of the array (use loops).
+def print_list():
+    names = ['Gun', 'Alice', 'Bob', 'Charlie', 'David']
+    for name in names:
+        print(name)
+    return (name)
 
+
+print(print_list)
+
+# 9. Declare a function named reverse_list. It takes an array as a parameter and it returns the reverse of the array (use loops).
 # Example:
 # print(reverse_list([1,2,3,4,5]))
 # [5,4,3,2,1]
 
+num_list = [1, 2, 3, 4, 5]
+
+
+def reverse_list(lst):
+
+    reversed_list = []
+
+    for numm in lst:
+        reversed_list.insert(0, numm)
+    return reversed_list
+
+
+print(reversed_list(num_list))
 # 10. Write capitalize_list_items(lst)
 # Return capitalized items list
 
