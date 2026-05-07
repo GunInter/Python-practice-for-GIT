@@ -1,15 +1,23 @@
-countries = [
-    'Finland',
-    'Sweden',
-    'Iceland',
-    'Thailand',
-    'Norway',
-    'Denmark',
-    'Poland',
-    'France'
-]
+# 5. Write check_season(month)
+# Return: Autumn, Winter, Spring or Summer
+def check_season(month):
+
+    Autumn = ['September', 'October', 'November']
+    Winter = ['December', 'January', 'February']
+    Spring = ['March', 'April', 'May']
+    Summer = ['June', 'July', 'August']
+
+    if month in Autumn:
+        return 'Autumn'
+
+    elif month in Winter:
+        return 'Winter'
+
+    elif month in Spring:
+        return 'Spring'
+
+    elif month in Summer:
+        return 'Summer'
 
 
-for find_land in countries:
-    if 'land' in find_land:
-        print(find_land)
+print(check_season('September'))

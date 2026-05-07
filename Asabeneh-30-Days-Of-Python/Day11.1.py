@@ -2,6 +2,9 @@
 
 # 1. Declare a function add_two_numbers.
 # It takes two parameters and returns a sum.
+import math
+
+
 def add_two_numbers(num1, num2):
     total = num1 + num2
     return total
@@ -50,15 +53,58 @@ print(cel_to_fahren(35))
 # 5. Write check_season(month)
 # Return: Autumn, Winter, Spring or Summer
 
-# 6. Write calculate_slope
 
-# 7. Write solve_quadratic_eqn(a, b, c)
+def check_season(month):
 
-# 8. Write print_list(lst)
-# Print each element using loop
+    Autumn = ['September', 'October', 'November']
+    Winter = ['December', 'January', 'February']
+    Spring = ['March', 'April', 'May']
+    Summer = ['June', 'July', 'August']
 
-# 9. Write reverse_list(lst)
-# Reverse using loops (not reverse())
+    if month in Autumn:
+        return 'Autumn'
+
+    elif month in Winter:
+        return 'Winter'
+
+    elif month in Spring:
+        return 'Spring'
+
+    elif month in Summer:
+        return 'Summer'
+
+
+print(check_season('September'))
+
+# 6. Write a function called calculate_slope which return the slope of a linear equation
+
+
+def calculate_slope(x1, y1, x2, y2):
+
+    m = (y2 - y1) / (x2 - x1)
+    return (m)
+
+
+print(calculate_slope(1, 5, 6, 7))
+
+# 7. Quadratic equation is calculated as follows: ax² + bx + c = 0. Write a function which calculates solution set of a quadratic equation, solve_quadratic_eqn.
+
+
+def solve_quadratic_eqn(a, b, c):
+
+    x1 = (-b + math.sqrt(b**2 - 4*a*c)) / (2*a)
+
+    x2 = (-b - math.sqrt(b**2 - 4*a*c)) / (2*a)
+
+    return x1, x2
+
+
+print(solve_quadratic_eqn(1, -5, 6))
+
+# 8.Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list.
+
+
+# 9. Declare a function named reverse_list. It takes an array as a parameter and it returns the reverse of the array (use loops).
 
 # Example:
 # print(reverse_list([1,2,3,4,5]))
