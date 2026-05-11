@@ -1,10 +1,9 @@
-def print_list():
-
-    names = ['Gun', 'Alice', 'Bob', 'Charlie', 'David']
-
-    for name in names:
-        print(name)
-
-
-print_list
-print(print_list())
+# main.py file
+from Mymodule import generate_full_name as fullname, sum_two_nums as total, person as p, gravity as g
+print(fullname('Asabneh','Yetayeh'))
+print(total(1,9))
+mass = 100;
+weight = mass * g
+print(weight)
+print(p)
+print(p['firstname'])
