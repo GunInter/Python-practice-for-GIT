@@ -104,14 +104,13 @@ print(solve_quadratic_eqn(1, -5, 6))
 # 8.Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list.
 
 
-def print_list():
-    names = ['Gun', 'Alice', 'Bob', 'Charlie', 'David']
-    for name in names:
-        print(name)
-    return (name)
+def print_list(lst):
+    for item in lst:
+        print(item)
 
 
-print(print_list)
+names = ['Gun', 'Alice', 'Bob', 'Charlie', 'David']
+print_list(names)
 
 # 9. Declare a function named reverse_list. It takes an array as a parameter and it returns the reverse of the array (use loops).
 # Example:
@@ -130,43 +129,147 @@ def reverse_list(lst):
     return reversed_list
 
 
-print(reversed_list(num_list))
-# 10. Write capitalize_list_items(lst)
-# Return capitalized items list
+print(reverse_list(num_list))
+# 10.Declare a function named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items
 
-# 11. Write add_item(lst, item)
-# Add item to end of list
 
+def capitalize_list_items(lst):
+    capitalize_items = []
+
+    for item in lst:
+        capitalize_items.append(item.capitalize())  # capitalize each string
+    return capitalize_items
+
+
+print(capitalize_list_items(['apple', 'banana', 'mango']))
+
+# 11. Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end.
 # Example:
 # food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
 # print(add_item(food_staff, 'Meat'))
 
-# 12. Write remove_item(lst, item)
-# Remove item from list
 
+def add_item(lst, item):
+    lst.append(item)
+
+    return lst
+
+
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
+
+print(add_item(food_staff, 'Meat'))
+
+# 12. Declare a function named remove_item. It takes a list and an item parameters. It returns a list with the item removed from it.
 # Example:
 # remove_item(food_staff, 'Mango')
 
-# 13. Write sum_of_numbers(num)
-# Sum all numbers from 0 to num
 
+def remove_item(lst, item):
+    lst.remove(item)
+    return lst
+
+
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(remove_item(food_staff, 'Mango'))
+
+# 13. Declare a function named sum_of_numbers. It takes a number parameter and it adds all the numbers in that range.
 # Example:
 # sum_of_numbers(5) -> 15
 
+
+def sum_of_numbers(sum_num):
+    total = 0
+    num_sum = 1
+
+    while num_sum <= sum_num:
+
+        total = total + num_sum
+        num_sum = num_sum + 1
+
+    return total
+
+
+print(sum_of_numbers(6))
+
 # 14. Write sum_of_odds(num)
+
+
+def sum_of_odds(odd_num):
+    total_odd = 0
+    current = 0
+
+    while current <= odd_num:
+        if current % 2 != 0:
+            total_odd = total_odd + current
+        current = current + 1
+
+    return total_odd
+
+
+print(sum_of_odds(25))
 
 # 15. Write sum_of_even(num)
 
-# 16. Write evens_and_odds(num)
-# Count total evens and odds
 
-# Example:
-# evens_and_odds(100)
+def sum_of_evens(even_num):
+    total_even = 0
+    current_even = 0
 
-# 17. Write factorial(num)
+    while current_even <= even_num:
+        if current_even % 2 == 0:
+            total_even = total_even + current_even
+        current_even = current_even + 1
 
-# 18. Write is_empty(value)
+    return total_even
 
+
+print(sum_of_evens(25))
+# 16. Declare a function named evens_and_odds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+# example
+# print(evens_and_odds(100))
+# The number of odds are 50.
+# The number of evens are 51.
+
+
+def evens_and_odds(num):
+    evens = 0
+    odds = 0
+    current = 0
+
+    while current <= num:
+        if current % 2 == 0:
+            evens = evens + 1
+        else:
+            odds = odds + 1
+        current = current + 1
+
+    print("The number of odds are", odds)
+    print("The number of evens are", evens)
+
+# 17. Write factorial(num)\ Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
+
+
+def factorial(num):
+    total = 1
+    counter = num
+    while counter > 0:
+        total = total * counter
+        counter = counter - 1
+    return total
+
+
+print(factorial(4))
+# 18. Write is_empty(value)\Call your function is_empty, it takes a parameter and it checks if it is empty or not
+
+
+def is_empty(value):
+    if value == "":
+        print('its empty')
+    else:
+        print('its not empty')
+
+
+print(is_empty(' '))
 # 19. Write:
 # calculate_mean(lst)
 # calculate_median(lst)
@@ -174,6 +277,37 @@ print(reversed_list(num_list))
 # calculate_range(lst)
 # calculate_variance(lst)
 # calculate_std(lst)
+
+
+def calculate_mean(lst):
+    total = 0
+    for mean in lst:
+        total = total + mean
+    mean = total / len(lst)
+    return mean
+
+
+print(calculate_mean([2, 4, 6, 8]))
+
+
+def calculate_median(lst):
+    pass
+
+
+def calculate_mode(lst):
+    pass
+
+
+def calculate_range(lst):
+    pass
+
+
+def calculate_variance(lst):
+    pass
+
+
+def calculate_std(lst):
+    pass
 
 # 20. Write is_prime(num)
 
