@@ -30,21 +30,27 @@ print(flattened_list)
 squares = [(i, 1, i**1, i**2, i**3, i**4, i**5) for i in range(11)]
 print(squares)
 
+
 # 4️⃣ Flatten the following list to a new list:
 countries = [[('Finland', 'Helsinki')], [
     ('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
-
 # output:
 # ['FINLAND', 'HELSINKI', 'SWEDEN', 'STOCKHOLM', 'NORWAY', 'OSLO']
 # HINT:
 # You need two loops + .upper()
 # [item.upper() for pair in countries for (item1, item2) in pair for item in (item1, item2)]
+countries_list = [
+    item.upper()                # convert each string to UPPERCASE
+    for row in countries        # level 1
+    for inners in row           # level 2
+    for item in inners          # level 3 (tuple items)
+]
+print(countries_list)
 
 
 # 5️⃣ Change the following list to a list of dictionaries:
 countries = [[('Finland', 'Helsinki')], [
     ('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
-
 # output:
 # [{'country': 'FINLAND', 'city': 'HELSINKI'},
 #  {'country': 'SWEDEN', 'city': 'STOCKHOLM'},
