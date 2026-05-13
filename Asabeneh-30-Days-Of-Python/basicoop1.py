@@ -1,6 +1,10 @@
 # name , salary
-class employee:
-    print('hello')
+class Employee:
+    pass
 
 
-print(employee)
+# build object
+emp1 = Employee()
+
+
+def employee():

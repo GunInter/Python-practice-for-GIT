@@ -59,6 +59,13 @@ countries = [[('Finland', 'Helsinki')], [
 # HINT:
 # Create dict inside a list comprehension:
 # [{'country': c.upper(), 'city': t.upper()} ... ]
+countries_dicts = [
+    {'country': country.upper(), 'city': city.upper()}
+    for row in countries
+    for (country, city) in row
+]
+
+print(countries_dicts)
 
 
 # 6️⃣ Change the following list of lists to a list of concatenated strings:
