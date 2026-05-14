@@ -77,7 +77,13 @@ names = [[('Asabeneh', 'Yetaeyeh')], [('David', 'Smith')],
 # HINT:
 # Use f-string inside comprehension:
 # [f"{first} {last}" for pair in names for (first, last) in pair]
+names_list = [
+    f"{first} {last}"
+    for row in names
+    for (first, last) in row
+]
 
+print(names_list)
 
 # 7️⃣ Write a lambda function which can solve a slope or y-intercept of linear functions.
 # (example: slope = (y2 - y1) / (x2 - x1))
@@ -85,3 +91,20 @@ names = [[('Asabeneh', 'Yetaeyeh')], [('David', 'Smith')],
 # HINT:
 # slope = lambda x1, y1, x2, y2: (y2 - y1) / (x2 - x1)
 # intercept = lambda x, y, m: y - m*x
+
+
+def slope_method():
+    x1 = float(input('Enter x1: '))
+    y1 = float(input('Enter y1: '))
+    x2 = float(input('Enter x2: '))
+    y2 = float(input('Enter y2: '))
+
+    # lambda functions
+    def slope(x1, y1, x2, y2): return (y2 - y1) / (x2 - x1)
+    def intercept(x, y, m): return y - m * x
+
+    m = slope(x1, y1, x2, y2)
+    b = intercept(x1, y1, m)
+
+    print("Slope (m):", m)
+    print("Y-intercept (b):", b)
