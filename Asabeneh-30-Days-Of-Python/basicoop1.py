@@ -1,10 +1,9 @@
 # name , salary
 class Employee:
-    pass
+    def detail(self):
+        print('Hi')
 
 
 # build object
 emp1 = Employee()
-
-
-def employee():
+emp1.detail()
