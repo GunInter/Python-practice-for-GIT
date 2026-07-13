@@ -12,12 +12,17 @@ B = np.random.randint(0, 2, (n, k))
 
 # check if the inner dimensions match for multiplication
 if A.shape[1] != B.shape[0]:
+
     print("Error: cannot multiply, sizes don't match!")
+
 else:
+
     print('Matrix A:')
     print(A)
+    
     print('Matrix B:')
     print(B)
+
     C = (A @ B) % 2
     print('Matrix C:')
     print(C)

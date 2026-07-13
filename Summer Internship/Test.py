@@ -11,4 +11,3 @@ A = np.random.randint(0, 2, (m, n))
 B = np.random.randint(0, 2, (n, k))
 
 # check if the inner dimensions match for multiplication
-print("A shape:", A.shape)
